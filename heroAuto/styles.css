@@ -10,7 +10,7 @@ img{
     width: 100%;
     height: 100vh;
     object-fit: cover;
-    filter:brightness(1) contrast(1.1) saturate(0);
+    filter:brightness(0.8) contrast(1.2) saturate(0.2);
     transition: transform 0.4s ease, filter 0.4s ease;
 }
 
@@ -31,7 +31,7 @@ img{
 }
 
 .title{
-    letter-spacing: 5px;
+    letter-spacing: 8px;
 }
 .shadow2{
     position: absolute;
@@ -39,9 +39,9 @@ img{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -65%);
-    font-family: "Raleway";
+    font-family: "Bebas Neue";
     font-weight: 900;
-    font-size: clamp(40px, 8vw, 100px);
+    font-size: clamp(40px, 8vw, 200px);
     color: rgba(192, 191, 191, 0.489);
 }
 .shadow1{
@@ -50,9 +50,9 @@ img{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -35%);
-    font-family: "Raleway";
+    font-family: "Bebas Neue";
     font-weight: 900;
-    font-size: clamp(40px, 8vw, 100px);
+    font-size: clamp(40px, 8vw, 200px);
     color: rgba(192, 191, 191, 0.489);
 }  
 
@@ -62,15 +62,15 @@ h1{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: "Raleway";
+    font-family: "Bebas Neue";
     font-weight: 900;
-    font-size: clamp(40px, 8vw, 100px);
+    font-size: clamp(40px, 8vw, 200px);
     color: rgba(255, 255, 255, 0.897);
     transition: 0.4s ease,
     color 0.5s ease;
 }
 
-h1:hover{
+.title:hover h1 {
     transform: translate(-50%, -50%) scale(1.1);
 }
 
@@ -87,7 +87,7 @@ h1:hover{
 
 .title:hover ~ img{
     transform: scale(1.02);
-    filter: saturate(1) brightness(1);
+    filter: saturate(1) contrast(1.2) brightness(0.7);
 }
 .title:hover h1{
     color: red;
@@ -96,13 +96,13 @@ h1:hover{
 @media (max-width: 768px){
 
     h1,.shadow1,.shadow2{
-        letter-spacing: 2px;
+        letter-spacing: 5px;
     }
 
     h1,
     .shadow1,
     .shadow2{
-        font-size: 35px;
+        font-size: 60px;
     }
 
 }
