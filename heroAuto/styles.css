@@ -1,0 +1,94 @@
+* , ::after , ::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    filter:brightness(1) contrast(1.1) saturate(0);
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.container{
+    position: relative;
+}
+
+.overlay{
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.485);
+}
+
+.title{
+    letter-spacing: 5px;
+}
+.shadow2{
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -65%);
+    font-family: "Raleway";
+    font-weight: 900;
+    font-size: 100px;
+    color: rgba(192, 191, 191, 0.489);
+}
+.shadow1{
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -35%);
+    font-family: "Raleway";
+    font-weight: 900;
+    font-size: 100px;
+    color: rgba(192, 191, 191, 0.489);
+}  
+
+h1{
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Raleway";
+    font-weight: 900;
+    font-size: 100px;
+    color: rgba(255, 255, 255, 0.897);
+    transition: 0.4s ease,
+                color 0.5s ease;
+}
+
+h1:hover{
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+
+.title:hover .shadow1,
+.title:hover .shadow2{
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.shadow1,
+.shadow2{
+    transition: transform 0.4s ease;
+}
+
+.title:hover ~ img{
+    transform: scale(1.02);
+    filter: saturate(1) brightness(1);
+}
+.title:hover h1{
+    color: red;
+}
