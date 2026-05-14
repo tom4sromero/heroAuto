@@ -41,7 +41,7 @@ img{
     transform: translate(-50%, -65%);
     font-family: "Raleway";
     font-weight: 900;
-    font-size: 100px;
+    font-size: clamp(40px, 8vw, 100px);
     color: rgba(192, 191, 191, 0.489);
 }
 .shadow1{
@@ -52,7 +52,7 @@ img{
     transform: translate(-50%, -35%);
     font-family: "Raleway";
     font-weight: 900;
-    font-size: 100px;
+    font-size: clamp(40px, 8vw, 100px);
     color: rgba(192, 191, 191, 0.489);
 }  
 
@@ -64,10 +64,10 @@ h1{
     transform: translate(-50%, -50%);
     font-family: "Raleway";
     font-weight: 900;
-    font-size: 100px;
+    font-size: clamp(40px, 8vw, 100px);
     color: rgba(255, 255, 255, 0.897);
     transition: 0.4s ease,
-                color 0.5s ease;
+    color 0.5s ease;
 }
 
 h1:hover{
@@ -91,4 +91,18 @@ h1:hover{
 }
 .title:hover h1{
     color: red;
+}
+
+@media (max-width: 768px){
+
+    h1,.shadow1,.shadow2{
+        letter-spacing: 2px;
+    }
+
+    h1,
+    .shadow1,
+    .shadow2{
+        font-size: 35px;
+    }
+
 }
