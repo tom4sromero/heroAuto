@@ -87,7 +87,7 @@ h1{
 
 .title:hover ~ img{
     transform: scale(1.02);
-    filter: saturate(1) contrast(1.2) brightness(0.7);
+    filter: saturate(1) contrast(1.2) brightness(0.9);
 }
 .title:hover h1{
     color: red;
@@ -102,7 +102,7 @@ h1{
     h1,
     .shadow1,
     .shadow2{
-        font-size: 60px;
+        font-size: 50px;
     }
 
 }
