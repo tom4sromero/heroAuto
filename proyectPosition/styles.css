@@ -1,0 +1,84 @@
+* , ::before , ::after{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background-color: #ddd;
+}
+
+.contenedor{
+    border: transparent;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.cubo__contenedor{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    transition: all 1s ease;
+}
+.box1{
+    top: 25%;
+    left: 25%;
+}
+
+.box2{
+    top: 25%;
+    left: 25%;
+}
+
+.box3{
+    top: 25%;
+    left: 25%;
+}
+
+.box4{
+    top: 25%;
+    left: 25%;
+}
+
+.contenedor:hover .box1{
+    transform: translate(50% , 50%);
+    background-color: rgb(255, 240, 76);
+}
+
+.contenedor:hover .box2{
+    transform: translate(-50% , 50%);
+    background-color: rgb(62, 97, 253);
+}
+
+.contenedor:hover .box3{
+    transform: translate(50% , -50%);
+    background-color: rgb(94, 244, 121);
+}
+
+.contenedor:hover .box4{
+    transform: translate(-50% , -50%);
+    background-color: rgb(251, 83, 83);
+}
+
+.contenedor:active .box1{
+    transform: rotate(90deg);
+    opacity: 0;
+}
+.contenedor:active .box2{
+    transform: rotate(270deg);
+    opacity: 0;
+}
+.contenedor:active .box3{
+    transform: rotate(-90deg);
+    opacity: 0;
+}
+.contenedor:active .box4{
+    transform: rotate(-270deg);
+    opacity: 0;
+}
